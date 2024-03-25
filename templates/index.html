@@ -1,0 +1,22 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Meeting Minutes Generator</h1>
+        <p>Upload your audio file to generate meeting minutes.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" id="audio-file" name="audio-file" accept=".wav,.mp3">
+            <button type="submit" id="upload-button">Upload</button>
+        </form>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
+```
